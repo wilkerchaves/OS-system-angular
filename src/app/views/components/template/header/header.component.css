@@ -1,0 +1,13 @@
+.header {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #343633;
+    background-color: #14213D;
+    color: #DFF3E4;
+}
+
+h1 {
+    color: #DEC1FF;
+}

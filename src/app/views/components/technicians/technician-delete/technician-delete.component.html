@@ -1,0 +1,22 @@
+<form class="form mat-elevation-z8">
+    <h1>Excluir técnico</h1>
+    <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Nome</mat-label>
+        <input disabled [(ngModel)]="technician.name" name="name" matInput placeholder="Ex. Maria Silva">
+    </mat-form-field>
+
+
+    <mat-form-field class="full-width" appearance="fill">
+        <mat-label>CPF</mat-label>
+        <input disabled [(ngModel)]="technician.cpf" name="cpf" type="" matInput placeholder="123.456.789-00">
+    </mat-form-field>
+
+    <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Telefone</mat-label>
+        <input disabled [(ngModel)]="technician.phone" name="phone" matInput placeholder="(XX) X XXXX-XXXX">
+
+    </mat-form-field>
+    <button (click)="delete()" class="mat-elevation-z8 delete" mat-flat-button color="warn">Excluir</button>
+    <button (click)="cancel()" class="mat-elevation-z8 cancel" mat-raised-button color="warn">Cancelar</button>
+
+</form>

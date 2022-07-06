@@ -1,0 +1,48 @@
+<div class="container">
+    <h1>Atualizar ordem de serviço</h1>
+    <div class="labels">
+        <mat-form-field appearance="fill">
+            <mat-label>Técnico</mat-label>
+            <mat-select [(value)]="os.technician">
+                <mat-option *ngFor="let technician of techList" value="{{technician.id}}">{{technician.name}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Cliente</mat-label>
+            <mat-select [(value)]="os.client">
+                <mat-option *ngFor="let client of clientList" value="{{client.id}}">{{client.name}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Status</mat-label>
+            <mat-select [(value)]="os.status">
+                <mat-option value="1">ABERTO</mat-option>
+                <mat-option value="2">EM ANDAMENTO</mat-option>
+                <mat-option value="3">ENCERRADO</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Prioridade</mat-label>
+            <mat-select [(value)]="os.priority">
+                <mat-option value="1">BAIXA</mat-option>
+                <mat-option value="2">MÉDIA</mat-option>
+                <mat-option value="3">ALTA</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="text-area">
+        <mat-form-field class="full-width" appearance="fill">
+            <mat-label>Observações</mat-label>
+            <textarea [(ngModel)]="os.observation" matInput></textarea>
+        </mat-form-field>
+    </div>
+
+    <div class="buttons">
+        <button (click)="update()" class="mat-elevation-z8 save" mat-flat-button color="accent">Salvar</button>
+        <button (click)="cancel()" class="mat-elevation-z8 cancel" mat-raised-button color="warn">Cancelar</button>
+    </div>
+
+</div>

@@ -1,0 +1,19 @@
+.container {
+    height: 85%;
+    background-color: #E5E7E6;
+}
+
+.nav-list {
+    background-color: #C4CBCA;
+    height: 100%;
+    padding: 0 10px;
+}
+
+a {
+    justify-content: center;
+}
+
+i {
+    margin-right: 1rem;
+    color: #14213D;
+}

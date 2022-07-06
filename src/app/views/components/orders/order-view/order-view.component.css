@@ -1,0 +1,100 @@
+table {
+    width: 100%;
+}
+
+tr.example-detail-row {
+    height: 0;
+}
+
+tr.example-element-row:not(.example-expanded-row):hover {
+    background: whitesmoke;
+}
+
+tr.example-element-row:not(.example-expanded-row):active {
+    background: #efefef;
+}
+
+.example-element-row td {
+    border-bottom-width: 0;
+}
+
+.example-element-detail {
+    overflow: hidden;
+    display: flex;
+}
+
+.example-element-diagram {
+    min-width: 80px;
+    border: 2px solid black;
+    padding: 8px;
+    font-weight: lighter;
+    margin: 8px 0;
+    height: 104px;
+}
+
+.example-element-symbol {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: normal;
+}
+
+.example-element-description {}
+
+.example-element-description-attribution {
+    opacity: 0.5;
+}
+
+.container {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.create {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.create h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.create-button button {
+    width: 15%;
+    margin: 1rem 80% auto;
+    position: absolute;
+    color: #FFF;
+    background-color: #57A773;
+    font-size: 85%;
+}
+
+.status {
+    font-weight: bold;
+}
+
+table,
+mat-paginator {
+    width: 100%;
+    background-color: #F4F4ED;
+}
+
+#delete {
+    color: red;
+}
+
+td.baixa {
+    color: rgb(4, 253, 4);
+    font-weight: bold;
+}
+
+td.media {
+    color: #F9C22E;
+    font-weight: bold;
+}
+
+td.alta {
+    color: red;
+    font-weight: bold;
+}

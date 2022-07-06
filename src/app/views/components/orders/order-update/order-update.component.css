@@ -1,0 +1,38 @@
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+.labels {
+    display: flex;
+    justify-content: space-between;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.save {
+    background-color: seagreen;
+    display: block;
+    margin: 10px auto;
+    width: 60%;
+}
+
+.cancel {
+    display: block;
+    margin: 10px auto;
+    width: 60%;
+}
+
+textarea {
+    width: 100%;
+    min-height: 4rem;
+    max-height: 15rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
